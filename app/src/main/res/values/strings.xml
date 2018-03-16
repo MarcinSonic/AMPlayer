@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">A&amp;M Player</string>
+    <string name="category_music">MUSIC</string>
+    <string name="category_audiobooks">AUDIOBOOKS</string>
+    <string name="title_activity_music">Music</string>
+
+</resources>
