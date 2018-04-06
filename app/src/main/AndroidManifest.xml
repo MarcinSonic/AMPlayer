@@ -22,6 +22,9 @@
         <activity
             android:name=".AudioBooksList"
             android:label="Audiobooks" />
+        <activity
+            android:name=".NowPlaying"
+            android:label="Now Playing" />
     </application>
 
 </manifest>

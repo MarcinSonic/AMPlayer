@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+<ScrollView
     android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     tools:context="pl.marcingorski.amplayer.MainActivity">
     <RelativeLayout
@@ -38,7 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center"
-            android:text="Start listening:"
+            android:text="@string/start_listening_sub_title"
             android:textColor="#FFFFFF"
             android:textSize="32sp" />
         </LinearLayout>
@@ -59,5 +62,5 @@
         android:background="@color/category_audiobooks"
         android:text="@string/category_audiobooks"
         />
-
 </LinearLayout>
+</ScrollView>

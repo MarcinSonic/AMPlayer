@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Find the View that shows the music category
-        TextView music = (TextView) findViewById(R.id.music);
+        TextView music = findViewById(R.id.music);
         // Set a click listener on that View
         music.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the music category is clicked on.
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // Find the View that shows the audiobooks category
-        TextView audiobooks = (TextView) findViewById(R.id.audiobooks);
+        TextView audiobooks = findViewById(R.id.audiobooks);
         // Set a click listener on that View
         audiobooks.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the audiobooks category is clicked on.

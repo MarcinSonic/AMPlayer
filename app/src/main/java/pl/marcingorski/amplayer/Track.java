@@ -1,9 +1,5 @@
 package pl.marcingorski.amplayer;
 
-/**
- * Created by gorsk on 15.03.2018.
- */
-
 public class Track {
     private String mTitle;
     private String mAuthor;
@@ -16,7 +12,6 @@ public class Track {
     public String getTitle() {
         return mTitle;
     }
-
     public String getAuthor() {
         return mAuthor;
     }

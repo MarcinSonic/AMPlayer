@@ -3,5 +3,6 @@
     <string name="category_music">MUSIC</string>
     <string name="category_audiobooks">AUDIOBOOKS</string>
     <string name="title_activity_music">Music</string>
-
+    <string name="back_button"><![CDATA[<- Back to Home ->]]></string>
+    <string name="start_listening_sub_title">Start listening:</string>
 </resources>
