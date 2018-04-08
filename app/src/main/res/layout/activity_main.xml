@@ -9,6 +9,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     tools:context="pl.marcingorski.amplayer.MainActivity">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="260dp">
@@ -50,7 +51,7 @@
 
     <TextView
         android:id="@+id/music"
-        style="@style/CategoryStyle"
+                style="@style/CategoryStyle"
         android:textAlignment="center"
         android:background="@color/category_music"
         android:text="@string/category_music" />

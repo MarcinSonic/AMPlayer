@@ -12,7 +12,6 @@ import java.util.ArrayList;
 
 public class MusicList extends AppCompatActivity {
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,9 +30,8 @@ public class MusicList extends AppCompatActivity {
             }
 
         });
-
         // Create a list of Tracks
-        final ArrayList<Track> tracks = new ArrayList<Track>();
+        final ArrayList<Track> tracks = new ArrayList <>();
         tracks.add(new Track("God's Plan", "Drake"));
         tracks.add(new Track("Perfect", "Ed Sheeran"));
         tracks.add(new Track("Finesse", "Bruno Mars & Cardi B"));
@@ -46,9 +44,6 @@ public class MusicList extends AppCompatActivity {
         tracks.add(new Track("Stir Fry", "Migos"));
         tracks.add(new Track("All The Stars", "Kendrick Lamar & SZA"));
         tracks.add(new Track("Let You Down", "NF"));
-
-
-
 
         // Create an {@link TrackAdapter}, whose data source is a list of {@link Track}s. The
         // adapter knows how to create list items for each item in the list.
@@ -81,13 +76,11 @@ public class MusicList extends AppCompatActivity {
                 startActivity(nowPlayingIntent);
             }
         });
-
     }
 
     private class OnItemClickListener implements AdapterView.OnItemClickListener {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
         }
     }
 }

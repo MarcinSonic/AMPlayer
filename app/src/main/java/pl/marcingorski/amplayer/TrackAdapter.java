@@ -17,11 +17,9 @@ import java.util.ArrayList;
  * * {@link TrackAdapter} is an {@link ArrayAdapter} that can provide the layout for each list
  * based on a data source, which is a list of {@link Track} objects.
  */
-
 public class TrackAdapter extends ArrayAdapter<Track> {
 
     private static final String LOG_TAG = TrackAdapter.class.getSimpleName();
-
     /**
      * @param context The current context. Used to inflate the layout file.
      * @param track   A List of AndroidFlavor objects to display in a list
@@ -29,7 +27,6 @@ public class TrackAdapter extends ArrayAdapter<Track> {
     public TrackAdapter(Activity context, ArrayList<Track> track) {
         super(context, 0, track);
     }
-
     /**
      * Provides a view for an AdapterView (ListView, GridView, etc.)
      *
@@ -49,22 +46,18 @@ public class TrackAdapter extends ArrayAdapter<Track> {
         }
 // Get the {@link AndroidFlavor} object located at this position in the list
         Track currentAndroidFlavor = getItem(position);
-
         // Find the TextView in the list_item.xml layout with the ID version_name
         TextView nameTextView = listItemView.findViewById(R.id.title_text_view);
         // Get the version name from the current AndroidFlavor object and
         // set this text on the name TextView
         nameTextView.setText(currentAndroidFlavor.getTitle());
-
         // Find the TextView in the list_item.xml layout with the ID version_number
         TextView authorTextView = listItemView.findViewById(R.id.author_text_view);
         // Get the version number from the current AndroidFlavor object and
         // set this text on the number TextView
         authorTextView.setText(currentAndroidFlavor.getAuthor());
-
         // Return the whole list item layout (containing 2 TextViews)
         // so that it can be shown in the ListView
         return listItemView;
     }
-
 }
