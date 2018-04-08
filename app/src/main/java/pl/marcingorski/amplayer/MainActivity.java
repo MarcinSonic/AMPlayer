@@ -27,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
-
         // Find the View that shows the audiobooks category
         TextView audiobooks = findViewById(R.id.audiobooks);
         // Set a click listener on that View
@@ -42,6 +41,5 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
-
     }
 }

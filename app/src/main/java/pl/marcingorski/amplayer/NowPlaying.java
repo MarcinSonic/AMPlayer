@@ -26,7 +26,6 @@ public class NowPlaying extends AppCompatActivity {
             authorNowPlaying.setText(authorString);
 
         }
-
         // Find the View that shows the music category
         TextView music = findViewById(R.id.music);
         // Set a click listener on that View
@@ -41,7 +40,6 @@ public class NowPlaying extends AppCompatActivity {
             }
 
         });
-
         // Find the View that shows the audiobooks category
         TextView audiobooks = findViewById(R.id.audiobooks);
         // Set a click listener on that View
@@ -56,9 +54,5 @@ public class NowPlaying extends AppCompatActivity {
             }
 
         });
-
-
     }
-
 }
-

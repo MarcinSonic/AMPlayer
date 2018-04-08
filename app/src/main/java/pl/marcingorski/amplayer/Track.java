@@ -8,7 +8,6 @@ public class Track {
         mTitle=Title;
         mAuthor=Author;
     }
-
     public String getTitle() {
         return mTitle;
     }

@@ -32,7 +32,7 @@ public class AudioBooksList extends AppCompatActivity {
         });
 
         // Create a list of Tracks
-        final ArrayList<Track> tracks = new ArrayList<Track>();
+        final ArrayList<Track> tracks = new ArrayList <>();
         tracks.add(new Track("Dune", "Frank Herbert"));
         tracks.add(new Track("Ender's Game", "Orson Scott Card"));
         tracks.add(new Track("The Foundation Trilogy", "Isaac Asimov"));
@@ -45,7 +45,6 @@ public class AudioBooksList extends AppCompatActivity {
         tracks.add(new Track("Neuromancer", "William Gibson"));
         tracks.add(new Track("I, Robot", "Isaac Asimov"));
         tracks.add(new Track("Starship Troopers", "Robert A Heinlein"));
-
 
         // Create an {@link TrackAdapter}, whose data source is a list of {@link Track}s. The
         // adapter knows how to create list items for each item in the list.
@@ -65,9 +64,6 @@ public class AudioBooksList extends AppCompatActivity {
             public void onItemClick(AdapterView <?> adapter, View v, int position,
                                     long id) {
                 // Create a new intent to open the {@link NowPlaying Activity}
-                Intent nowPlayingIntent = new Intent(AudioBooksList.this, NowPlaying.class);
-
-
                 listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                     @Override
                     public void onItemClick(AdapterView <?> parent, View view, int position, long id) {
@@ -77,8 +73,6 @@ public class AudioBooksList extends AppCompatActivity {
                         String title = tracks.get(position).getTitle();
                         nowPlayingIntent.putExtra("author", author);
                         nowPlayingIntent.putExtra("title", title);
-
-
                         // Start the new activity
                         startActivity(nowPlayingIntent);
                     }
